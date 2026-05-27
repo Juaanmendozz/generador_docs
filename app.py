@@ -1047,6 +1047,8 @@ class App(tk.Tk):
                 placeholder="Dolor lumbar crónico...")
             self._agregar_campo("Tratamiento", "tratamiento", alto=3,
                 placeholder="Masaje terapéutico, electroterapia...")
+
+    def _leer_campos(self):
         datos = {}
         for key, widget in self.campos.items():
             if isinstance(widget, tk.StringVar):
